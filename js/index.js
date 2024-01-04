@@ -15,8 +15,8 @@ function openUploadPopup(){
 
 async function startDermProcess(){
 
-    let nameOfFile = await uploadFile();
-    console.log(nameOfFile);
+    let {oldFileName, newFileName} = await uploadFile();
+    console.log("details: ", oldFileName, newFileName);
 
     let newID = uniqueID();
     console.log(newID);
@@ -24,12 +24,12 @@ async function startDermProcess(){
     loader.textContent = "Detecting...";
     loader.style.display = "grid";
 
-    let prediction = performPrediction(nameOfFile);
+    let prediction = performPrediction(oldFileName);
     console.log("pred: ", prediction);
     
     let resultsID = await uploadResults(
         {
-            imageName: nameOfFile,
+            imageName: newFileName,
             id: newID,
             result: prediction,
             userID: "1"
@@ -133,7 +133,13 @@ async function uploadFile(){
 
         http.onload = function(){
             if(this.status == 200){
-                resolve(this.responseText);
+
+                console.log("name2: ",this.responseText);
+
+                resolve({
+                    oldFileName: file.name ,
+                    newFileName: this.responseText
+                });
             }
             else{
                reject("error");
