@@ -207,7 +207,7 @@ function performPrediction(imageName){
         case "ISIC_0024634.jpg":
             return 1; // BCC
         default:
-            return 2; // BLK
+            return 9; // None
     }
 }
 
@@ -264,7 +264,7 @@ async function showResultsFor(resultID){
             quickResultElement.innerHTML = `<p>Benign</p> <p>Your provided image shows features that are commonly associated with df (dermatofibroma) and should be further examined by a dermatologist or your regular physician.</p>`;
         break;
         case "4":
-            quickResultElement.textContent = `<p>Benign</p> <p>Your provided image shows features that are commonly associated with Melanocytic Nevi (NV) and should be further examined by a dermatologist or your regular physician.</p>`;
+            quickResultElement.innerHTML = `<p>Benign</p> <p>Your provided image shows features that are commonly associated with Melanocytic Nevi (NV) and should be further examined by a dermatologist or your regular physician.</p>`;
         break;
         case "5":
             quickResultElement.innerHTML = `<p>Benign.</p> <p>Your provided image shows features that are commonly associated with Pyogenic Granulomas and Hemorrhage (VASC) and should be further examined by a dermatologist or your regular physician.</p>`;
@@ -272,6 +272,9 @@ async function showResultsFor(resultID){
         case "6":
             quickResultElement.innerHTML = `<p>Cancerous.</p> <p>Your provided image shows features that are commonly associated with Melanoma (MEL) and should be further examined by a dermatologist or your regular physician.</p>`;
         break;
+        default:
+            quickResultElement.innerHTML = `<p>Non Cancerous.</p> <p>Your provided image shows no signs of cancer.</p>`;
+        break
     }
 
 }

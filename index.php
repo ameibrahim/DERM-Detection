@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DERM Detect</title>
-    <link rel="stylesheet" href="css/main.css?17">
+    <link rel="stylesheet" href="css/main.css?18">
     <link rel="stylesheet" href="css/popup.css?6">
     <link rel="stylesheet" href="css/input.css?2">
 
     <script src="js/functions.js?1"></script>
-    <script src="js/index.js?12" defer></script>
+    <script src="js/index.js?13" defer></script>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsJcP3lhpz8_BASV-vQ7MQdCg_Ywlas5I&callback=console.debug&libraries=maps,marker&v=beta"></script>
 </head>
 <body>
@@ -30,6 +30,7 @@
         </div>
 
         <?php include 'components/instructions.php' ?>
+        <?php include 'components/educational-content.php' ?>
         <?php include 'components/skin-info.php' ?>
         <?php include 'components/results.php' ?>
         <?php include 'components/map.php' ?>
