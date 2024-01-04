@@ -1,5 +1,7 @@
 let uploadPopup = document.querySelector(".overlay.upload");
 let resultsPopup = document.querySelector(".overlay.results");
+let loaderImage = resultsPopup.querySelector(".image");
+
 let loader = document.querySelector(".loader");
 let userID = "1";
 
@@ -287,6 +289,7 @@ async function showResultsFor(resultID){
 
 function openResultsPopup(){
     resultsPopup.style.display = "grid";
+    loaderImage.src = "loader.gif";
 }
 
 function closeResultsPopup(){

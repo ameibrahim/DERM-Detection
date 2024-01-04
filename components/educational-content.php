@@ -37,7 +37,7 @@
 
         <p> * Sunscreen: Regularly apply broad-spectrum sunscreen with SPF 30 or higher. </p>
 
-        <p> * Protective Clothing: Wear hats, sunglasses, and clothing that covers exposed skin.</p>
+        <p> * Protective Clothing: Wear hats, sunglasses, and clothing to cover sun-exposed areas of the body.</p>
 
         <p> * Seek Shade: Limit exposure during peak sunlight hours. </p>
         
