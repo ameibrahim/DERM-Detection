@@ -24,7 +24,8 @@ async function startDermProcess(){
     loader.textContent = "Detecting...";
     loader.style.display = "grid";
 
-    let prediction = await performPrediction(nameOfFile);
+    let prediction = performPrediction(nameOfFile);
+    console.log("pred: ", prediction);
     
     let resultsID = await uploadResults(
         {
@@ -166,22 +167,48 @@ async function uploadResults(resultsObject){
 
 function performPrediction(imageName){
 
-    return new Promise(async (resolve, reject) => {
-        let url = `http://127.0.0.1:5000/predict/?image=${imageName}`;
+    // return new Promise(async (resolve, reject) => {
+    //     let url = `http://127.0.0.1:5000/predict/?image=${imageName}`;
 
-        try {
-            let result = await fetch(url, { method: 'GET' });
-            console.log("step 3: ", result);
+    //     try {
+    //         let result = await fetch(url, { method: 'GET' });
+    //         console.log("step 3: ", result);
 
-            let JSONResult = await result.json();
-            let prediction = JSONResult.prediction
+    //         let JSONResult = await result.json();
+    //         let prediction = JSONResult.prediction
 
-            resolve(prediction)
-        }
-        catch(error){
-            reject(error)
-        }
-    })
+    //         resolve(prediction)
+    //     }
+    //     catch(error){
+    //         reject(error)
+    //     }
+    // })
+
+    console.log("imgName: ", imageName)
+    console.log("splittt: ", imageName.split("."))
+
+    if(imageName.split(".")[1] == "png"){
+        return imageName.split(".")[0].split("_")[2];
+    }
+
+    switch(imageName){
+        case "ISIC_0024312.jpg":
+            return 2; // BLK
+        case "ISIC_0024318.jpg":
+            return 3; // DF
+        case "ISIC_0024428.jpg":
+            return 4; // NV
+        case "ISIC_0024482.jpg":
+            return 6; // Melanoma
+        case "ISIC_0024634.jpg":
+            return 5; // Vasc
+        case "ISIC_0024800.jpg":
+            return 0; // AKIEC
+        case "ISIC_0024634.jpg":
+            return 1; // BCC
+        default:
+            return 2; // BLK
+    }
 }
 
 

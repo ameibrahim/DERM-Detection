@@ -2,7 +2,7 @@
     <div class="popup">
         <div class="popup-body"> 
             <div class="image">
-                <img src="uploads/image_106_2.png" alt="">
+                <img src="loader.gif" alt="">
             </div>
 
             <div class="wrapper">

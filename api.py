@@ -1,7 +1,12 @@
+import os
 import numpy as np
 from PIL import Image
+import tensorflow as tf
+from flask import Flask, request, render_template
+from tensorflow import keras
+from keras.layers import Dense
+from keras.models import Sequential, load_model
 from flask import Flask, request, jsonify
-from keras.models import load_model
 from flask_cors import CORS
 
 application = Flask(__name__)
