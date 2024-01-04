@@ -8,15 +8,15 @@
         </div>
 
         <div class="derm-item">
-            Firstly, take a picture of the area of your skin that is of concern to you.
+            Click on the "Click to start" button to begin.
         </div>
 
         <div class="derm-item">
-            Then, click on the "Click to start" button to begin.
+            Next, click the "Choose File"/"Browse" button to select or take an image of your skin.
         </div>
 
         <div class="derm-item">
-            Next, select the image of your skin and click "start detection".
+            Click "start detection" and wait.
         </div>
 
         <div class="derm-item">

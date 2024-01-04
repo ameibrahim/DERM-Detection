@@ -9,7 +9,7 @@
         </div>
 
         <div class="derm-item">
-        a. Melanoma (MEL); often characterized as the most fatal form of skin cancer. It is a malignant illness that generally destroys melanocytes cells (which  secrete melanin pigment, giving the which gives the skin its characteristic color). Common symptoms include the formation of brown or black spots.
+        a. Melanoma (MEL); often characterized as the most fatal form of skin cancer. It is a malignant illness that generally destroys melanocytes cells, which are cells that secrete melanin pigment, giving the skin its characteristic color. Common symptoms include the formation of brown or black spots.
         </div>
 
         <div class="derm-item">
