@@ -15,11 +15,12 @@ html {
 }
 
 .outer-container{
-    width: 100%;
+    width: 100vw;
     padding: 50px;
     position: relative;
     display: grid;
     grid-gap: 30px;
+    overflow: hidden;
 }
 
 .derm-detect-title {
@@ -150,7 +151,7 @@ html {
 
 .inner-wrapper h1 {
     color: var(--accent);
-    font-size: 8em;
+    font-size: 4em;
     font-family: Copperplate;
     font-weight: 400;
     text-shadow: 1px 1px 10px #000;
@@ -358,7 +359,7 @@ p + p {
 @media screen and (max-width: 800px){
 
     .header{
-        min-height: 120px;
+        display: none;
     }
 
     .header h1 {
@@ -369,13 +370,24 @@ p + p {
         font-size: 9px;
     }
 
+    .inner-wrapper {
+        padding: 20px;
+        text-align: center;
+    }
+
     .inner-wrapper h1 {
-        font-size: 6em;
+        font-size: 4em;
     }
 
     .inner-wrapper .derm-button {
         margin-top: 40px;
         font-size: 24px;
     }
+
+    .outer-container {
+        padding: 20px;
+    }
+
+
 
 }   

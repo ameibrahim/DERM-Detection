@@ -1,4 +1,4 @@
-<div class="container" id="disclaimer">
+<div class="container" id="#education">
     <h4 class="derm-detect-title top-header">Educational Content</h4>
 
     <div class="derm-disclaimer-container">
