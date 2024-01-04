@@ -6,7 +6,7 @@
                 <!-- <div class="derm-button">upload an image</div> -->
 
                 <label for="images" class="drop-container" id="dropcontainer">
-                <span class="drop-title">Select or photo from your gallery or use your camera</span>
+                <span class="drop-title">Take an image of your skin or select a photo from your gallery.</span>
                 <input type="file" id="images" accept="image/*" capture="environment" required>
                 </label>
                 
