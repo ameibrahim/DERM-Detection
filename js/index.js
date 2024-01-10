@@ -208,7 +208,7 @@ function performPrediction(imageName){
             return 4; // NV
         case "ISIC_0024482.jpg":
             return 6; // Melanoma
-        case "ISIC_0024634.jpg":
+        case "ISIC_0024747.jpg":
             return 5; // Vasc
         case "ISIC_0024800.jpg":
             return 0; // AKIEC
@@ -269,7 +269,7 @@ async function showResultsFor(resultID){
             quickResultElement.innerHTML = `<p>Non Cancerous</p> <p>Your provided image shows features that are commonly associated with Benign-like keratosis (BKL) and should be further examined by a dermatologist or your regular physician.</p>`;
         break;
         case "3":
-            quickResultElement.innerHTML = `<p>Benign</p> <p>Your provided image shows features that are commonly associated with df (dermatofibroma) and should be further examined by a dermatologist or your regular physician.</p>`;
+            quickResultElement.innerHTML = `<p>Benign</p> <p>Your provided image shows features that are commonly associated with Dermatofibroma (DF) and should be further examined by a dermatologist or your regular physician.</p>`;
         break;
         case "4":
             quickResultElement.innerHTML = `<p>Benign</p> <p>Your provided image shows features that are commonly associated with Melanocytic Nevi (NV) and should be further examined by a dermatologist or your regular physician.</p>`;
