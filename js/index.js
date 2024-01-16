@@ -175,23 +175,6 @@ async function uploadResults(resultsObject){
 
 function performPrediction(imageName){
 
-    // return new Promise(async (resolve, reject) => {
-    //     let url = `http://127.0.0.1:5000/predict/?image=${imageName}`;
-
-    //     try {
-    //         let result = await fetch(url, { method: 'GET' });
-    //         console.log("step 3: ", result);
-
-    //         let JSONResult = await result.json();
-    //         let prediction = JSONResult.prediction
-
-    //         resolve(prediction)
-    //     }
-    //     catch(error){
-    //         reject(error)
-    //     }
-    // })
-
     console.log("imgName: ", imageName)
     console.log("splittt: ", imageName.split("."))
 
